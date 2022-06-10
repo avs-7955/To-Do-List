@@ -1,6 +1,6 @@
 
 # To-Do List
-A simple interactive to do list with an animated background where the users can add their tasks by simply typing them and pressing ENTER to save it. They are also tick the check boxes when the tasks are completed.
+A simple interactive to do list with an animated background where the users can add their tasks by simply typing them and pressing ENTER to save it. They can also tick the check boxes when the tasks are completed.
 
 
 ## Screenshots
