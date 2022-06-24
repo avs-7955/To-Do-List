@@ -2,12 +2,16 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const date = require(__dirname + "/date.js");
 const mongoose = require('mongoose');
+const _ = require('lodash');
 
 const app = express();
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
+
+//To get the day and date
+const day = date.getDate();
 
 //Connecting to the database
 mongoose.connect('mongodb://localhost:27017/todolistDB', { useNewUrlParser: true });
@@ -47,8 +51,6 @@ const List = mongoose.model("List", listSchema);
 
 
 app.get("/", function (_req, res) {
-    //To get the day and date
-    const day = date.getDate();
 
     //To read from the db
     Item.find({}, function (err, foundItems) {
@@ -95,17 +97,30 @@ app.post("/", function (req, res) {
 
 app.post("/delete", function (req, res) {
     const item_finished_id = req.body.check_box;
+    const finished_list_title = req.body.hidden;
 
-    Item.findByIdAndRemove(item_finished_id, function (err) {
-        if (!err) {
-            console.log("Deletion successfully completed.");
-            res.redirect("/");
-        };
-    });
+    if (finished_list_title === day) {
+        //If the default list - use the default list parameter.
+        Item.findByIdAndRemove(item_finished_id, function (err) {
+            if (!err) {
+                console.log("Deletion successfully completed.");
+                res.redirect("/");
+            };
+        });
+    }
+    else {
+        //$pull is mangodb inherit command.
+        List.findOneAndUpdate({ name: finished_list_title }, { $pull: { items: { _id: item_finished_id } } }, function (err, found_list) {
+            if (!err) {
+                res.redirect("/" + finished_list_title);
+            }
+        });
+    }
 });
 
+// Creating dynamic pages
 app.get("/:customCategoryName", function (req, res) {
-    const customCategoryName = req.params.customCategoryName;
+    const customCategoryName = _.capitalize(req.params.customCategoryName);
 
     List.findOne({ name: customCategoryName }, function (err, found_list) {
         if (!err) {
