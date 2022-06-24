@@ -13,7 +13,8 @@ body {
 .context {
     width: 100%;
     position: absolute;
-    top: 10vh;
+    top: 3vh;
+    /* to move the content up/down. */
     z-index: 10;
 
 }
