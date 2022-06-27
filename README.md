@@ -11,7 +11,8 @@ The completed tasks are deleted to help the list look less daunting and boost yo
 
  TechStack</h1>
 
-<div align="center"><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/html-5.svg"/><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/css-3.svg"/><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/javascript.svg"/><img width="55" src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/To-Do_List_Homepage_Screenshot/ejs_o5_afmImW.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1655145623529"/><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/nodejs.svg"/><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/express.svg"/><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/json.svg"/><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/mongodb.svg"/></div>
+<div align="center"><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/html-5.svg"/><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/css-3.svg"/><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/javascript.svg"/><img width="55" src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/To-Do_List_Homepage_Screenshot/ejs_o5_afmImW.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1655145623529"/>
+<img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/mongodb.svg"/><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/express.svg"/><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/nodejs.svg"/></div>
 
 ## Screenshots
 The list of tasks being displayed in various lists beside the dafault list. Everytime a new category of list is generated, a set of 3 default tasks are displayed.
