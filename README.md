@@ -28,6 +28,7 @@ The list of tasks being displayed in various lists beside the dafault list. Ever
 </tr>
 </table>
 </div>
+
 ## Author
 
 - [Ayushi Sharan](https://github.com/avs-7955)
