@@ -28,7 +28,3 @@ The list of tasks being displayed in various lists beside the dafault list. Ever
 - [Ayushi Sharan](https://github.com/avs-7955)
 
 
-## Feedback
-
-If you have any feedback, please reach out to me at ayushi.v.sharan@gmail.com
-
