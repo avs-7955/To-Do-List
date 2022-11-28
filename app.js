@@ -14,7 +14,7 @@ app.use(express.static("public"));
 const day = date.getDate();
 
 //Connecting to the database
-mongoose.connect('mongodb://localhost:27017/todolistDB', { useNewUrlParser: true });
+mongoose.connect('mongodb://0.0.0.0:27017/todolistDB', { useNewUrlParser: true });
 
 //Creating the item Schema
 const itemSchema = new mongoose.Schema({
@@ -141,9 +141,9 @@ app.get("/:customCategoryName", function (req, res) {
     });
 });
 
-app.get("/about", function (req, res) {
-    res.render("about");
-});
+// app.get("/about", function (req, res) {
+//     res.render("about");
+// });
 
 app.listen(3000, function () {
     console.log("Server started on port 3000.");
