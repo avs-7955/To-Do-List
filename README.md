@@ -17,15 +17,14 @@ The completed tasks are deleted to help the list look less daunting and boost yo
 ## Screenshots
 The list of tasks being displayed in various lists beside the dafault list. Everytime a new category of list is generated, a set of 3 default tasks are displayed.
 <div align="center">
-<table>
-  <tr>
-  <td>
 <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/To-Do_List_Homepage_Screenshot/To-Do_List_Screenshot_cuwsVt4TQ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654864716343"/>
-</td>
-<td>
+
 <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/To-Do_List_Homepage_Screenshot/work_list_FoW8Q2aRB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656218248037"/>
-</td>
-</tr>
-</table>
+
 </div>
+
+## Author
+
+- [Ayushi Sharan](https://github.com/avs-7955)
+
 
